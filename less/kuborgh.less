@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900,700,300);
+
+body {
+	background-color: #DFE2E6;
+}
+
+*, .tab-focus() {
+	outline: 0;
+}
+
+td select,
+td textarea,
+td input[type="text"],
+td input[type="password"],
+td input[type="datetime"],
+td input[type="datetime-local"],
+td input[type="date"],
+td input[type="month"],
+td input[type="time"],
+td input[type="week"],
+td input[type="number"],
+td input[type="email"],
+td input[type="url"],
+td input[type="search"],
+td input[type="tel"],
+td input[type="color"],
+td .uneditable-input {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/* Table */
+.table-bordered thead tr {
+  background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+}
+
+	.table-bordered thead tr th {
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  font-size: 13px;
+	  font-weight: 600;
+	  color: #444;
+	  border-left: 1px solid #F1F1F1;
+	  border-right: 1px solid #CCC;
+	  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+	  -moz-box-shadow: inset 0 1px 0 #ffffff;
+	  box-shadow: inset 0 1px 0 #ffffff;
+	}
+
+		.table-bordered thead tr th:first-child {
+		  border-left-color: #CCC;
+		}
+
+		.table-bordered thead tr th:last-child {
+		  border-right: none;
+		}
+
+		.table-bordered thead th {
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  font-size: 13px;
+		  font-weight: 400;
+		  color: #444;
+		  border-left: 1px solid #F1F1F1;
+		  border-right: 1px solid #CCC;
+		  -moz-box-shadow: inset 0 1px 0 #ffffff;
+		  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+		  box-shadow: inset 0 1px 0 #ffffff;
+		}
+
+		.table-bordered thead th:first-child {
+		  border-left-color: #CCC;
+		}
+		.table-bordered thead th:last-child {
+		  border-right: none;
+		}
+
+.table-bordered tbody tr:first-child td {
+	border-top-color: #CCC;
+}
+
+.table-bordered tbody tr td {
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #DDD;
+}
+
+	.table-bordered tbody tr td:first-child {
+	  border-left-color: #DDD;
+	}
+
+	.table-bordered tbody tr td:last-child {
+	  border-right: none;
+	}
+
+.table-bordered tbody td {
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #DDD;
+}
+
+.table-bordered tbody tr td:first-child {
+  border-left-color: #DDD;
+}
+.table-bordered tbody tr td:last-child {
+  border-right: none;
+}
+
+/* Progressbar */
+
+.progress {
+    background-color: #F7F7F7;
+    background-image: linear-gradient(to bottom, #F5F5F5, #F9F9F9);
+    background-repeat: repeat-x;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2) inset;
+    height: 20px;
+    overflow: hidden;
+}
+
+	td .progress {
+		margin-bottom: 0;
+	}
+
+/* Tree */
+
+ul.tree {
+	background-color: @tableBackground;
+}
+
+ ul.tree, ul.tree ul {
+ 	list-style-type: none;
+ 	background: url(../templates/default/bootstrap/img/tree-vline.png) repeat-y;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ ul.tree ul {
+ 	margin-left: 30px;
+ }
+
+ ul.tree li {
+ 	margin: 0;
+ 	padding: 0 12px;
+ 	line-height: 37px;
+ 	background: url(../templates/default/bootstrap/img/tree-node.png) no-repeat;
+ 	font-weight: bold;
+ }
+
+	ul.tree li:nth-child(odd) {
+		background: red;
+	}
+
+ ul.tree > li:last-child {
+ 	background: transparent url(../templates/default/bootstrap/img/tree-lastnode.png) no-repeat;
+ }
