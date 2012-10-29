@@ -32,6 +32,7 @@ td .uneditable-input {
 
 
 /* Table */
+
 .table-bordered thead tr {
   background-color: #e6e6e6;
   background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
@@ -129,10 +130,20 @@ td .uneditable-input {
 		margin-bottom: 0;
 	}
 
+.progress .bar {
+  #gradient > .vertical(#515151, #2d2d2d);
+}
+
 /* Tree */
 
 ul.tree {
 	background: #ffffff url(../templates/default/bootstrap/img/list-bg.png) repeat;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
  ul.tree, ul.tree ul {
@@ -149,7 +160,7 @@ ul.tree {
  ul.tree li {
  	margin: 0;
  	padding: 0 12px;
- 	line-height: 37px;
+ 	line-height: 43px;
  	/*background: url(../templates/default/bootstrap/img/tree-node.png) no-repeat;*/
  	font-weight: bold;
  }
@@ -157,3 +168,112 @@ ul.tree {
  ul.tree > li:last-child {
  	/*background: transparent url(../templates/default/bootstrap/img/tree-lastnode.png) no-repeat;*/
  }
+
+
+
+ /* Login */
+
+ /* Kuborgh Login */
+.loginbox {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background: #edeff2; /* Old browsers */
+	background: -moz-linear-gradient(top, #edeff2 0%, #d3d9de 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edeff2), color-stop(100%,#d3d9de)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #edeff2 0%,#d3d9de 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #edeff2 0%,#d3d9de 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #edeff2 0%,#d3d9de 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #edeff2 0%,#d3d9de 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeff2', endColorstr='#d3d9de',GradientType=0 ); /* IE6- */
+
+	text-align: center;
+
+	z-index: 99999;
+
+}
+	.loginbox .box {
+		position: relative;
+		margin: 10% auto 0 auto;
+		width: 320px;
+
+		background: #ffffff;
+		background: -moz-linear-gradient(top, rgba(255,255,255, 1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,0.70) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.96)), color-stop(1%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.70))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0.70) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0.70) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0.70) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0.70) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ffffff', endColorstr='#d9ffffff',GradientType=0 ); /* IE6-9 */
+
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.1), 0px 3px 4px rgba(0,0,0,0.05), 0px 5px 8px rgba(0,0,0,0.05), 0px 5px 13px rgba(0,0,0,0.03), inset 0px 1px 0px rgba(255,255,255,1);
+
+		padding: 20px;
+
+		border: 1px solid #ffffff;
+
+		margin-bottom: 20px;
+	}
+
+	.loginbox .box:after {
+	    top: 0;
+	    -webkit-transform: rotate(2deg);
+	    -moz-transform: rotate(2deg); 
+	     -ms-transform: rotate(2deg);
+	       -o-transform: rotate(2deg);
+	          transform: rotate(2deg);
+	    z-index: -4;
+	}
+	.loginbox .box:after {
+	    background: #ffffff;
+		background: -moz-linear-gradient(top, rgba(255,255,255, 1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,0.70) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.96)), color-stop(1%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.70))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0.70) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0.70) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0.70) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,255,255,0.70) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ffffff', endColorstr='#d9ffffff',GradientType=0 ); /* IE6-9 */
+
+	    content: "";
+	    display: block;
+	    height: 100%;
+	    left: -1px;
+	    position: absolute;
+	    width: 100%;
+
+	    -webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+
+	    box-shadow: 0px 2px 2px rgba(0,0,0,0.1), 0px 3px 4px rgba(0,0,0,0.05), 0px 5px 8px rgba(0,0,0,0.05), 0px 5px 13px rgba(0,0,0,0.03), inset 0px 1px 0px rgba(255,255,255,1);
+	}
+
+		.loginbox .box h2 {
+			text-align: center;
+			margin-bottom: 20px;
+			color: #4d4d4d;
+			text-shadow: 0px 1px 0px #ffffff;
+		}
+
+		.loginbox .box input[type="text"], .loginbox .box input[type="password"] {
+			width: 300px;
+			padding: 10px;
+			margin-bottom: 20px;
+			box-shadow: 0px 1px 0px #ffffff;
+		}
+
+
+		.loginbox .box input[type="submit"].btn, .loginbox .box button.btn {
+			width: 320px;
+			padding: 10px;
+		}
+
+		.loginbox .box img {
+			margin: 20px auto;
+		}
